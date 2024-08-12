@@ -29,6 +29,6 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@users.noreply.github.com"
           # if there's only 1+1 change it is just the timestamp, don't update the file
-          git diff --numstat | awk 'BEGIN { OK=0; }; $1 > 1 || $2 > 1 { OK=1; }; END { if (OK) { exit(0); } else { exit(1); }}' | exit 0
+          git diff --numstat | awk 'BEGIN { OK=0; }; $1 > 1 || $2 > 1 { OK=1; }; END { if (OK) { exit(0); } else { exit(1); }}' || exit 0
           git commit -a -m "Update ip ranges" || exit 0
           git push
