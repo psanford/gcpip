@@ -574,6 +574,22 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 
+		Prefix: netip.MustParsePrefix("34.152.100.0/24"),
+
+		Service: "Google Cloud",
+		Scope:   "asia-northeast2",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
+		Prefix: netip.MustParsePrefix("34.177.68.0/24"),
+
+		Service: "Google Cloud",
+		Scope:   "asia-northeast2",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
 		Prefix: netip.MustParsePrefix("35.217.128.0/17"),
 
 		Service: "Google Cloud",
@@ -846,6 +862,14 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 
+		Prefix: netip.MustParsePrefix("34.152.106.0/23"),
+
+		Service: "Google Cloud",
+		Scope:   "asia-south1",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
 		Prefix: netip.MustParsePrefix("34.153.58.0/23"),
 
 		Service: "Google Cloud",
@@ -879,6 +903,14 @@ func init() {
 	r = IPRange{
 
 		Prefix: netip.MustParsePrefix("34.177.32.0/22"),
+
+		Service: "Google Cloud",
+		Scope:   "asia-south1",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
+		Prefix: netip.MustParsePrefix("34.177.74.0/23"),
 
 		Service: "Google Cloud",
 		Scope:   "asia-south1",
@@ -1166,6 +1198,14 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 
+		Prefix: netip.MustParsePrefix("34.152.104.0/23"),
+
+		Service: "Google Cloud",
+		Scope:   "asia-southeast1",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
 		Prefix: netip.MustParsePrefix("34.153.40.0/23"),
 
 		Service: "Google Cloud",
@@ -1199,6 +1239,14 @@ func init() {
 	r = IPRange{
 
 		Prefix: netip.MustParsePrefix("34.157.210.0/23"),
+
+		Service: "Google Cloud",
+		Scope:   "asia-southeast1",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
+		Prefix: netip.MustParsePrefix("34.177.72.0/23"),
 
 		Service: "Google Cloud",
 		Scope:   "asia-southeast1",
@@ -1630,6 +1678,22 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 
+		Prefix: netip.MustParsePrefix("34.152.101.0/24"),
+
+		Service: "Google Cloud",
+		Scope:   "australia-southeast2",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
+		Prefix: netip.MustParsePrefix("34.177.69.0/24"),
+
+		Service: "Google Cloud",
+		Scope:   "australia-southeast2",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
 		Prefix: netip.MustParsePrefix("2600:1900:41c0::/44"),
 
 		Service: "Google Cloud",
@@ -1806,6 +1870,14 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 
+		Prefix: netip.MustParsePrefix("34.152.103.0/24"),
+
+		Service: "Google Cloud",
+		Scope:   "europe-southwest1",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
 		Prefix: netip.MustParsePrefix("34.157.44.0/23"),
 
 		Service: "Google Cloud",
@@ -1831,6 +1903,14 @@ func init() {
 	r = IPRange{
 
 		Prefix: netip.MustParsePrefix("34.175.0.0/16"),
+
+		Service: "Google Cloud",
+		Scope:   "europe-southwest1",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
+		Prefix: netip.MustParsePrefix("34.177.71.0/24"),
 
 		Service: "Google Cloud",
 		Scope:   "europe-southwest1",
@@ -3438,6 +3518,14 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 
+		Prefix: netip.MustParsePrefix("34.152.102.0/24"),
+
+		Service: "Google Cloud",
+		Scope:   "me-central2",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
 		Prefix: netip.MustParsePrefix("34.166.0.0/16"),
 
 		Service: "Google Cloud",
@@ -3447,6 +3535,14 @@ func init() {
 	r = IPRange{
 
 		Prefix: netip.MustParsePrefix("34.177.48.0/23"),
+
+		Service: "Google Cloud",
+		Scope:   "me-central2",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
+		Prefix: netip.MustParsePrefix("34.177.70.0/24"),
 
 		Service: "Google Cloud",
 		Scope:   "me-central2",
@@ -5918,4 +6014,4 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 }
 
-var createDate = "2025-01-31T18:05:08.990708"
+var createDate = "2025-02-07T18:06:52.571442"
