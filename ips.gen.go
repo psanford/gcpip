@@ -1054,6 +1054,22 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 
+		Prefix: netip.MustParsePrefix("34.183.3.0/25"),
+
+		Service: "Google Cloud",
+		Scope:   "asia-south2",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
+		Prefix: netip.MustParsePrefix("34.184.3.0/25"),
+
+		Service: "Google Cloud",
+		Scope:   "asia-south2",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
 		Prefix: netip.MustParsePrefix("2600:1900:41b0::/44"),
 
 		Service: "Google Cloud",
@@ -1551,6 +1567,22 @@ func init() {
 	r = IPRange{
 
 		Prefix: netip.MustParsePrefix("34.153.252.0/25"),
+
+		Service: "Google Cloud",
+		Scope:   "australia-southeast1",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
+		Prefix: netip.MustParsePrefix("34.183.2.0/24"),
+
+		Service: "Google Cloud",
+		Scope:   "australia-southeast1",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
+		Prefix: netip.MustParsePrefix("34.184.2.0/24"),
 
 		Service: "Google Cloud",
 		Scope:   "australia-southeast1",
@@ -3142,6 +3174,22 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 
+		Prefix: netip.MustParsePrefix("34.183.0.0/24"),
+
+		Service: "Google Cloud",
+		Scope:   "europe-west8",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
+		Prefix: netip.MustParsePrefix("34.184.0.0/24"),
+
+		Service: "Google Cloud",
+		Scope:   "europe-west8",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
 		Prefix: netip.MustParsePrefix("35.219.224.0/19"),
 
 		Service: "Google Cloud",
@@ -4063,6 +4111,22 @@ func init() {
 	r = IPRange{
 
 		Prefix: netip.MustParsePrefix("34.177.66.0/25"),
+
+		Service: "Google Cloud",
+		Scope:   "southamerica-west1",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
+		Prefix: netip.MustParsePrefix("34.183.1.0/24"),
+
+		Service: "Google Cloud",
+		Scope:   "southamerica-west1",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
+		Prefix: netip.MustParsePrefix("34.184.1.0/24"),
 
 		Service: "Google Cloud",
 		Scope:   "southamerica-west1",
@@ -6046,4 +6110,4 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 }
 
-var createDate = "2025-02-14T18:07:20.635389"
+var createDate = "2025-02-28T18:08:26.376399"
