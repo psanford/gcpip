@@ -3830,6 +3830,14 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 
+		Prefix: netip.MustParsePrefix("8.228.224.0/20"),
+
+		Service: "Google Cloud",
+		Scope:   "global",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
 		Prefix: netip.MustParsePrefix("34.3.2.0/27"),
 
 		Service: "Google Cloud",
@@ -4178,6 +4186,14 @@ func init() {
 
 		Service: "Google Cloud",
 		Scope:   "me-central1",
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+
+		Prefix: netip.MustParsePrefix("8.228.192.0/19"),
+
+		Service: "Google Cloud",
+		Scope:   "me-central2",
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
@@ -7334,4 +7350,4 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 }
 
-var createDate = "2025-11-21T18:17:00.565255"
+var createDate = "2026-01-16T18:06:33.509953"
